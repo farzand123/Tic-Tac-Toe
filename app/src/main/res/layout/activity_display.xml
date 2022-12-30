@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display">
+
+    <TextView
+        android:id="@+id/displayTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/playAgainButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:onClick="playagain"
+
+            android:text="Play Again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:onClick="home"
+            android:text="Home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/playAgainButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        custom:srcCompat="@drawable/down" />
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="changebox1"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="changebox4"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toStartOf="@+id/box2"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box7"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="changebox7"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toStartOf="@+id/box2"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="changebox2"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box5"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="changebox5"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toStartOf="@+id/box3"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box8"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="changebox8"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toStartOf="@+id/box3"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box3"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="changebox3"
+        android:textSize="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box6"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="changebox6"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/box9"
+        android:layout_width="91dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="changebox9"
+        android:textSize="60dp"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/displayTurn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/winnerline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="275dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="385dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="210dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="330dp"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="330dp"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginBottom="330dp"
+        android:rotation="90"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="380dp"
+        android:rotation="45"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/winnerline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="384dp"
+        android:rotation="135"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:srcCompat="@drawable/line" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
